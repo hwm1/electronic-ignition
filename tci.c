@@ -124,8 +124,8 @@ int look_for_pulse(void)
     //if counter == 0 enough time elapsed between
     //setting of timer and pulse to indicate it is
     //first pulse
-      if (get_ms_counter == 0)
-      //if counter was 0, got first pulse
+      if (get_ms_counter() == 0)
+      //if counter was 0, didn't get both pulses
       continue;
 
     //else got second pulse and timer value is valid

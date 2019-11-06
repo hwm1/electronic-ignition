@@ -74,7 +74,7 @@ main()
     //get time in 1/100 ms to rotate one degree here
     degree_time = current_counter_value / pickup_degrees;
     //get current RPM here
-    current_rpm = ((degree_time * 360) / 1000) / 60;
+    current_rpm = ((degree_time * 360) / 100000) / 60;
 
     //determine advance to use from RPM
       if (current_rpm < 1000)
